@@ -11,7 +11,6 @@ static byte mac[] = {0x90,0xA2,0xDA,0x00,0x69,0x7C};
 
 static IPAddress mqttServer(192, 168, 1, 49);
 static int mqttPort(1883);
-static const char* topicName = "/iot/topic";
 static const char* clientName = "iot";
 static const char* user = "user";
 static const char* password = "prueba01";
