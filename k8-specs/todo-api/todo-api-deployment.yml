@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-api
+  namespace: default
+  labels:
+    componet: todo-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: todo-api
+  template:
+    metadata:
+      labels:
+        component: todo-api
+    spec:
+      containers:
+        - name: todo-api
+          image: b0rr3g0/golang-todo-api
+          ports:
+            - containerPort: 8000
+              name: http
+              protocol: TCP
