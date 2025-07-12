@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <apache.commons-lang>3.8.1</apache.commons-lang>
+        <apache.commons-lang>3.18.0</apache.commons-lang>
     </properties>
 
     <dependencies>
